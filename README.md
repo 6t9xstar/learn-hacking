@@ -1,6 +1,3 @@
-<p align="center">
-  <img src="assets/banner.svg" alt="learn-hacking: free, open-source cybersecurity education from beginner to advanced" width="100%" />
-</p>
 
 <h1 align="center">learn-hacking</h1>
 
