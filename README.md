@@ -1,5 +1,5 @@
 
-<h1 align="center">learn-hacking</h1>
+<h1 align="center">Learn-Hacking</h1>
 
 <p align="center">
   A free, structured, and practical cybersecurity curriculum — from your first Linux command to professional, authorized security work.
