@@ -1,0 +1,35 @@
+name: Propose a feature or learning path
+description: Suggest a new guide, roadmap, project, translation, or automation improvement.
+title: "[Idea]: "
+labels: ["enhancement", "triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What learner problem does this solve?
+      description: Describe the gap, who it affects, and why existing material is insufficient.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Outline the structure, scope, and expected evidence of learning.
+    validations:
+      required: true
+  - type: textarea
+    id: maintenance
+    attributes:
+      label: Maintenance plan
+      description: Who can review it, how will links and technical accuracy be kept current?
+    validations:
+      required: false
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety
+      options:
+        - label: The proposal can be taught using owned systems, deliberately vulnerable apps, or authorized labs.
+          required: true
+        - label: I am not proposing instructions for unauthorized access or harmful activity.
+          required: true

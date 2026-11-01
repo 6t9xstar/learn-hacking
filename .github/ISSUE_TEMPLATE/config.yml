@@ -1,0 +1,14 @@
+# Security and safety
+
+Thanks for taking the time to report a problem. **Do not open a public issue for a security-sensitive report, and never test third-party systems.**
+
+If this is a vulnerability in the repository, its automation, or a malicious/unsafe resource:
+
+- Use the **Security** tab and select **Report a vulnerability**.
+- If private reporting is unavailable, contact the maintainer through the GitHub profile listed in `SECURITY.md`.
+- Describe the file, link, or workflow affected and the potential impact.
+- Do not include live credentials, personal data, or malware.
+
+For ordinary broken links, typos, or confusing explanations, use the content issue template instead.
+
+Read the full policy: https://github.com/6t9xstar/learn-hacking/blob/main/SECURITY.md

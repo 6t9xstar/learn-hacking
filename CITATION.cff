@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this curriculum or build on it, please cite the repository."
+title: "learn-hacking: Free Ethical Hacking and Cybersecurity Learning Repository"
+abstract: "A free, open-source, beginner-to-advanced cybersecurity curriculum with learning roadmaps, verified resources, hands-on labs, practical projects, defensive guides, and professional templates."
+version: 1.0.0
+date-released: "2026-10-31"
+license: MIT
+url: "https://github.com/6t9xstar/learn-hacking"
+repository-code: "https://github.com/6t9xstar/learn-hacking"
+keywords:
+  - cybersecurity
+  - ethical-hacking
+  - information-security
+  - penetration-testing
+  - blue-team
+  - digital-forensics
+  - cloud-security
+  - security-education
+authors:
+  - family-names: "Awan"
+    given-names: "Malik Taimoor"
+    alias: "6t9xstar"
+    website: "https://github.com/6t9xstar"
+type: software

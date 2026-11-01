@@ -1,0 +1,52 @@
+# Operating system and editor noise
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*~
+
+# Dependencies and local tooling
+node_modules/
+.pnpm-store/
+.cache/
+coverage/
+.cspellcache
+
+# Local learner material that should not be committed
+notes/private/
+labs/
+*.pcap
+*.pcapng
+*.mem
+*.raw
+*.E01
+*.dd
+*.ova
+*.vdi
+*.vmdk
+*.qcow2
+*.exe
+*.dll
+*.so
+*.dylib
+*.pyc
+__pycache__
+
+# Secrets and environment files
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+credentials*.json
+secrets*.yaml
+secrets*.yml
+
+# Reports that may contain sensitive data
+reports/private/
+findings/private/
+
+# Local validation output
+link-report.json
+link-report.md

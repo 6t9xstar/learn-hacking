@@ -1,0 +1,109 @@
+name: Suggest a free resource
+description: Propose a course, lab, tool, book, community, or documentation source.
+title: "[Resource]: "
+labels: ["resource", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please suggest resources you have actually used or reviewed. Free resources are prioritized.
+        Affiliate links, pirated material, exam dumps, and paid-only promotions will be closed.
+  - type: input
+    id: name
+    attributes:
+      label: Resource name
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Official HTTPS URL
+      description: The canonical page, not a search redirect or affiliate link.
+      placeholder: https://example.org/security-course
+    validations:
+      required: true
+  - type: input
+    id: provider
+    attributes:
+      label: Provider or maintainer
+    validations:
+      required: true
+  - type: dropdown
+    id: category
+    attributes:
+      label: Best-fit category
+      options:
+        - Foundations
+        - Ethical hacking
+        - Network security
+        - Web application security
+        - Mobile security
+        - Wireless security
+        - Cloud security
+        - Digital forensics
+        - Malware analysis
+        - SOC and blue team
+        - Red team
+        - Bug bounty
+        - Active Directory and Windows
+        - Linux security
+        - Cryptography
+        - OSINT
+        - IoT or hardware
+        - Blockchain and smart contracts
+        - AI/LLM security
+        - DevSecOps or AppSec
+        - Exploit development
+        - Threat intelligence
+        - Architecture or GRC
+        - Career development
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: level
+    attributes:
+      label: Level
+      options:
+        - Beginner
+        - Intermediate
+        - Advanced
+        - Mixed
+    validations:
+      required: true
+  - type: dropdown
+    id: cost
+    attributes:
+      label: Cost and access
+      options:
+        - Free
+        - Free account required
+        - Freemium (some content free)
+        - Paid (optional recommendation)
+    validations:
+      required: true
+  - type: textarea
+    id: free_details
+    attributes:
+      label: What exactly is free?
+      description: Required for freemium platforms. Be specific.
+    validations:
+      required: false
+  - type: textarea
+    id: value
+    attributes:
+      label: What will a learner gain?
+      description: Describe the learning outcome and prerequisites.
+    validations:
+      required: true
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: The URL is official, live, and not an affiliate or piracy link.
+          required: true
+        - label: I have disclosed any affiliation with this resource.
+          required: true
+        - label: This resource is appropriate for authorized, ethical learning.
+          required: true

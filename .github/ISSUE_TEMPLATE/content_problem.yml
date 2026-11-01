@@ -1,0 +1,55 @@
+name: Report a content problem
+description: Report a broken link, incorrect explanation, unsafe instruction, or outdated resource.
+title: "[Content]: "
+labels: ["content", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for improving the curriculum. Do not include secrets, personal data, or confidential client information.
+        For security-sensitive issues, use the private process in SECURITY.md instead.
+  - type: input
+    id: location
+    attributes:
+      label: File or page
+      description: Path or URL of the affected page.
+      placeholder: web-application-security/README.md
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Type of problem
+      options:
+        - Broken or moved link
+        - Incorrect or outdated technical content
+        - Unclear explanation
+        - Unsafe instruction or missing safety boundary
+        - Cost or access label is wrong
+        - Formatting or navigation issue
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: details
+    attributes:
+      label: What is wrong?
+      description: Quote the smallest relevant excerpt and explain the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Authoritative evidence or replacement
+      description: Link to an official source, test result, or the correct URL. Include the date checked.
+    validations:
+      required: false
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have not included confidential data, secrets, or personal information.
+          required: true
+        - label: I am not asking for help attacking a system.
+          required: true

@@ -1,0 +1,24 @@
+{
+  "name": "learn-hacking",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Free, comprehensive cybersecurity learning repository with roadmaps, verified resources, labs and projects.",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "lint:md": "markdownlint-cli2 \"**/*.md\" \"#node_modules\" \"#.github/ISSUE_TEMPLATE\"",
+    "lint:md:fix": "markdownlint-cli2 --fix \"**/*.md\" \"#node_modules\" \"#.github/ISSUE_TEMPLATE\"",
+    "check:links": "node scripts/link-checker/check-links.mjs",
+    "check:links:external": "node scripts/link-checker/check-links.mjs --external",
+    "validate": "node scripts/validate-repo.mjs",
+    "spellcheck": "cspell --no-progress --no-summary \"**/*.md\"",
+    "check": "npm run validate && npm run lint:md && npm run check:links"
+  },
+  "devDependencies": {
+    "cspell": "^8.17.5",
+    "markdownlint-cli2": "^0.17.2"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
